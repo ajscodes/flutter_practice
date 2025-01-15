@@ -67,6 +67,7 @@ class ListCity extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10)
                   ),
+
                   child: ListTile(
                     title: Text(citycountry[index]['name']),
                     subtitle: Text(citycountry[index]['country']),
