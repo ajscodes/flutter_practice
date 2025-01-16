@@ -60,13 +60,9 @@ class ListCity extends StatelessWidget {
                 return Container(
                   margin: EdgeInsets.symmetric(vertical: 5),
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.7),
-                    border: Border.all(
-                      color: Colors.blueGrey,
-                      width: 1
-                    ),
-                    borderRadius: BorderRadius.circular(10)
-                  ),
+                      color: Colors.white.withOpacity(0.7),
+                      border: Border.all(color: Colors.blueGrey, width: 1),
+                      borderRadius: BorderRadius.circular(10)),
                   child: ListTile(
                     title: Text(citycountry[index]['name']),
                     subtitle: Text(citycountry[index]['country']),
