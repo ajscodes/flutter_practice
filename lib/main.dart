@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/Lab11/A1.dart';
+import 'package:flutter_practice/Lab12/A1.dart';
+import 'package:flutter_practice/Lab12/A2.dart';
 import 'package:flutter_practice/try1/t1.dart';
 import 'package:flutter_practice/try2/t2.dart';
+
+import 'Lab12/A3.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,9 +19,11 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => HomeScreen(),
-        '/try1': (context) => Try1(),
+        '/try1': (context) => ScrollInside(),
         '/try2': (context) => Try2(),
+        '/lab11&a1': (context) => ListCity(),
       },
+        debugShowCheckedModeBanner: false
     );
   }
 }
@@ -28,10 +35,11 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Center(
             child: Text(
-              "Lab Management Window",
-              style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),
-            )),
-        backgroundColor: Colors.blueAccent,),
+          "Lab Management Window",
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+        )),
+        backgroundColor: Colors.blueAccent,
+      ),
       body: Center(
         child: Column(
           children: [
@@ -43,6 +51,10 @@ class HomeScreen extends StatelessWidget {
               onPressed: () => Navigator.pushNamed(context, '/try2'),
               child: Text("Try2"),
             ),
+            ElevatedButton(
+                onPressed: () => Navigator.pushNamed(context, '/lab11&a1'),
+                child: Text("Lab11-1"),
+            )
           ],
         ),
       ),
