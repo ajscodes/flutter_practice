@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_practice/Lab11/A1.dart';
 import 'package:flutter_practice/Lab12/A1.dart';
 import 'package:flutter_practice/Lab12/A2.dart';
+import 'package:flutter_practice/Lab13/A1.dart';
+import 'package:flutter_practice/Lab13/A2.dart';
 import 'package:flutter_practice/try1/t1.dart';
 import 'package:flutter_practice/try2/t2.dart';
 
 import 'Lab12/A3.dart';
+import 'Lab13/A3.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +22,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => HomeScreen(),
-        '/try1': (context) => ScrollInside(),
+        '/try1': (context) => IndexScreen(),
         '/try2': (context) => Try2(),
         '/lab11&a1': (context) => ListCity(),
       },
