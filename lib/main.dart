@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/Contact%20Diary/CRUD.dart';
+
 import 'package:flutter_practice/Lab11/A1.dart';
 import 'package:flutter_practice/Lab12/A1.dart';
 import 'package:flutter_practice/Lab12/A2.dart';
@@ -25,6 +27,7 @@ class MyApp extends StatelessWidget {
         '/try1': (context) => IndexScreen(),
         '/try2': (context) => Try2(),
         '/lab11&a1': (context) => ListCity(),
+        '/crud': (context) => ContactDiary(),
       },
         debugShowCheckedModeBanner: false
     );
@@ -57,6 +60,14 @@ class HomeScreen extends StatelessWidget {
             ElevatedButton(
                 onPressed: () => Navigator.pushNamed(context, '/lab11&a1'),
                 child: Text("Lab11-1"),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/crud'),
+              child: Text("Contact Diary"),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/gpt'),
+              child: Text("GPT"),
             )
           ],
         ),
